@@ -9,21 +9,20 @@ date_results = soup.find_all('strong')
 date_time_records = []
 
 for result in date_results:
-	print(result)
 	date_time = result.find('strong')
+	print(date_time)
 	date_time_records.append(date_time)
 
 TAF_results = soup.find_all('code')
 TAF_records = []
 
 for result in TAF_results:
-	print(result)
 	TAF = result.find('code')
+	print(TAF)
 	TAF_records.append(TAF)
 
 print(date_time_records)
 print(TAF_records)
-
 
 
 

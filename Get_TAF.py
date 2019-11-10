@@ -7,6 +7,7 @@ soup = BeautifulSoup(r.text,'html.parser')
 
 date_results = soup.find_all('script')
 date_time_records = []
+print(date_results)
 
 for result in date_results:
 	date_time = result.find('strong').text

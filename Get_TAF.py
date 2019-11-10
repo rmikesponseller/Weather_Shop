@@ -8,6 +8,7 @@ soup = BeautifulSoup(r.text,'html.parser')
 
 results = soup.find_all('span', attrs={'class':'short-desc'})
 
-print(results.find('strong'))
+first_result = results[0]
+first_result.find('strong')
 
 

@@ -5,11 +5,14 @@ r = requests.get('https://www.aviationweather.gov/taf/data?ids=KSAT&format=raw&m
 
 soup = BeautifulSoup(r.text,'html.parser')
 
-date_time = soup.find('strong').text
+date_time = soup.find_all('strong').text
 print(date_time)
 
-TAF = soup.find('code').text
+TAF = soup.find_all('code').text
 print(TAF)
+
+
+
 
 
 

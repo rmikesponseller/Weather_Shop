@@ -7,8 +7,7 @@ print(r.text[0:500])
 soup = BeautifulSoup(r.text,'html.parser')
 
 results = soup.find_all('span', attrs={'class':'short-desc'})
-len(results)
 
-print(results.find('code'))
+print(results.find('strong'))
 
 

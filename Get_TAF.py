@@ -7,11 +7,11 @@ soup = BeautifulSoup(r.text,'html.parser')
 
 date_time_1 = soup.find_all('strong')
 date_time = soup.find('strong').text
-print(date_time)
+print(date_time_1)
 
 TAF_1 = soup.find_all('code')
 TAF = soup.find('code').text
-print(TAF)
+print(TAF_1)
 
 
 

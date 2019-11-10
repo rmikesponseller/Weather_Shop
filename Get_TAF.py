@@ -10,7 +10,7 @@ date_time_records = []
 
 for result in date_results:
 	print(result)
-	date_time = result.find('strong').text
+	date_time = result.find('strong')
 	data_time_records.append(date_time)
 
 TAF_results = soup.find_all('code')
@@ -18,7 +18,7 @@ TAF_records = []
 
 for result in TAF_results:
 	print(result)
-	TAF = result.find('code').text
+	TAF = result.find('code')
 	TAF_records.append(TAF)
 
 print(data_time_records)

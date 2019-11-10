@@ -6,7 +6,10 @@ r = requests.get('https://www.aviationweather.gov/taf/data?ids=KDLF&format=raw&m
 soup = BeautifulSoup(r.text,'html.parser')
 
 results = soup.find_all('strong')
-len(results)
+print(results)
+
+
+
 
 
 

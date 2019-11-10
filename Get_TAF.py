@@ -11,9 +11,13 @@ for entry in date_time_1:
 	print(date_time)
 
 TAF_1 = soup.find_all('code')
+print(len(TAF_1))
 for entry in TAF_1:
 	TAF = soup.find('code').text
 	print(TAF)
+
+
+
 
 
 

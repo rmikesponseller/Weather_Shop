@@ -7,7 +7,7 @@ soup = BeautifulSoup(r.text,'html.parser')
 
 date_time_1 = soup.find_all('strong')
 for entry in date_time_1:
-	date_time = data_time_1.find('strong').text
+	date_time = date_time_1.find('strong').text
 	print(date_time)
 
 TAF_1 = soup.find_all('code')
